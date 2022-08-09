@@ -46,6 +46,10 @@ class Conexion(object):
                 return True,'El nombre de usuario o contraseña son incorrectos.'
             elif 'Su estado de cuenta es anormal' in str(i.string):
                 return True,'Su estado de cuenta es anormal.'
+            elif 'Usted ha realizado muchos intentos' in str(i.string):
+                return True,'Usted ha realizado muchos intentos. Por favor intente más tarde.'
+            elif 'El saldo de su cuenta es insuficiente, recargue su cuenta en intentelo de nuevo' in str(i.string):
+                return True,'El saldo de su cuenta es insuficiente, recargue su cuenta en intentelo de nuevo.'
                 
         return False,''
 
