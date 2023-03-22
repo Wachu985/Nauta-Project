@@ -1,4 +1,3 @@
-#Usuarios = {'pedrod2000@nauta.co.cu':'Pedrod.2000'}
 Usuarios = {}
 
 PARAMLOGIN = [
